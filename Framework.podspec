@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage     = "https://github.com/tn173/MyFramework"
   s.author       = { "tn173" => "tomoaki.nishioka@upswell.jp" }
-  s.source       = { :git => "https://github.com/tn173/MyFramework.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/tn173/Framework.git", :tag => "#{s.version}" }
   s.platform     = :ios, '8.0'
   s.source_files = 'Framework/**/*'
   s.vendored_libraries = 'Framework/**/*.a'
