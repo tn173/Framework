@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4139BA23FAA84500270735 /* MyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D4139B823FAA84500270735 /* MyLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D4139BB23FAA84500270735 /* libMyLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4139B923FAA84500270735 /* libMyLib.a */; };
 		3D8DBB3623F3ED2800F34877 /* Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8DBB3423F3ED2800F34877 /* Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D8DBB3E23F3EDB200F34877 /* Log.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8DBB3C23F3EDB200F34877 /* Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D8DBB3F23F3EDB200F34877 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DBB3D23F3EDB200F34877 /* Log.m */; };
-		3D8DBB4223F3EDF300F34877 /* MyLib2.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8DBB4023F3EDF300F34877 /* MyLib2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D8DBB4323F3EDF300F34877 /* libMyLib2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8DBB4123F3EDF300F34877 /* libMyLib2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D4139B823FAA84500270735 /* MyLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLib.h; sourceTree = "<group>"; };
+		3D4139B923FAA84500270735 /* libMyLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMyLib.a; sourceTree = "<group>"; };
 		3D8DBB3123F3ED2800F34877 /* Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8DBB3423F3ED2800F34877 /* Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Framework.h; sourceTree = "<group>"; };
 		3D8DBB3523F3ED2800F34877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D8DBB3C23F3EDB200F34877 /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		3D8DBB3D23F3EDB200F34877 /* Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
-		3D8DBB4023F3EDF300F34877 /* MyLib2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLib2.h; sourceTree = "<group>"; };
-		3D8DBB4123F3EDF300F34877 /* libMyLib2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMyLib2.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D8DBB4323F3EDF300F34877 /* libMyLib2.a in Frameworks */,
+				3D4139BB23FAA84500270735 /* libMyLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +59,8 @@
 				3D8DBB3523F3ED2800F34877 /* Info.plist */,
 				3D8DBB3C23F3EDB200F34877 /* Log.h */,
 				3D8DBB3D23F3EDB200F34877 /* Log.m */,
-				3D8DBB4123F3EDF300F34877 /* libMyLib2.a */,
-				3D8DBB4023F3EDF300F34877 /* MyLib2.h */,
+				3D4139B923FAA84500270735 /* libMyLib.a */,
+				3D4139B823FAA84500270735 /* MyLib.h */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -73,7 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D8DBB3623F3ED2800F34877 /* Framework.h in Headers */,
-				3D8DBB4223F3EDF300F34877 /* MyLib2.h in Headers */,
+				3D4139BA23FAA84500270735 /* MyLib.h in Headers */,
 				3D8DBB3E23F3EDB200F34877 /* Log.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +287,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framework",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aaa.Framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -313,6 +314,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framework",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aaa.Framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

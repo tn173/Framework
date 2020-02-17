@@ -7,13 +7,13 @@
 //
 
 #import "Log.h"
-#import "MyLib2.h"
+#import "MyLib.h"
 
 @implementation Log
 
-- (void)callMylib2 {
-     id mylib2 = [[MyLib2 alloc] init];
-     [mylib2 outputLog]; // コンソールにメッセージ出力する
+- (void)callMylib {
+     id mylib= [[MyLib alloc] init];
+     [mylib outputLog]; // コンソールにメッセージ出力する
 }
 
 @end

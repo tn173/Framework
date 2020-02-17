@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Log : NSObject
 
-- (void)callMylib2;
+- (void)callMylib;
 
 @end
 
